@@ -1,0 +1,19 @@
+{ 
+    "name": "FakNewsNoMore",
+    "description": "Chrome extension to detect fake news",
+    "version": "1.1",
+    "manifest_version": 3,
+    "host_permissions": [],
+    "background": {
+        "service_worker": "background/background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_title": "FakNewsNoMore",
+        "default_icon": "assets/protection-shield-icon-2.jpeg",
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "assets/icon.png"
+    }
+}
