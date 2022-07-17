@@ -2,15 +2,25 @@
 <html>
   <head>
     <link rel="stylesheet" href="popup.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://use.fontawesome.com/releases/v5.0.6/js/all.js 'unsafe-inline' 'unsafe-eval'; ">
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="lib/html-duration-picker.min.js"></script>
+</body>
   </head>
   <body>
     <main>
-      <div class="container">
-        <h1 class="heading">FakeNewsNoMore</h1>
-        <h3 class="sub-heading">Chrome extension to detect fake news.</h3>
-        <div id="main-content"></div>
+      <div id="container">
+        <h1>Block Media <span id="toggle-form" class="material-symbols-outlined">edit</span><span id="clear-all" class="material-symbols-outlined">delete_forever</span><span id="save" class="material-symbols-outlined">save_as</span></h1>
+        <span class="entry-box"><input type="text" placeholder="Enter url" id="url-textbox"><input type="text" class="html-duration-picker" id="duration-textbox"></span>
+        <ul id="limit-list">
+        </ul>
       </div>
     </main>
     <script src="popup.js"></script>
+    <script type="text/javascript" src="saving.js"></script>
   </body>
 </html>
