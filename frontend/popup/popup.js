@@ -68,7 +68,7 @@ function updateBlockedUrlTimes() {
     // Write the HTML to local storage...
     localStorage.setItem("listHTML", html);
 
-              chrome.tabs.update({ url: 'https://annie2409.github.io/No-Access/' })
+              chrome.tabs.update({ url: 'https://annie2409.github.io/You-have-used-up-all-your-time-for-this-site/' })
               clearInterval(interval)
               timer.innerText = '00:00:00'
             } else {
