@@ -1,15 +1,15 @@
-{ 
-    "name": "FakNewsNoMore",
+{
+    "name": "Get Off it",
     "description": "Chrome extension to detect fake news",
     "version": "1.1",
     "manifest_version": 3,
     "host_permissions": [],
     "background": {
-        "service_worker": "background/background.js"
+        "service_worker": "popup/popup.js"
     },
-    "permissions": ["storage"],
+    "permissions": ["storage", "tabs", "webNavigation", "*://*/*"],
     "action": {
-        "default_title": "FakNewsNoMore",
+        "default_title": "Get off it",
         "default_icon": "assets/protection-shield-icon-2.jpeg",
         "default_popup": "popup/popup.html"
     },
