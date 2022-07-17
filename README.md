@@ -1,2 +1,2 @@
-# Fake-News-Extension
-Fake-News-Chrome-Extension
+# Get Off it
+A chrome extension to help you focus and get off social media.
